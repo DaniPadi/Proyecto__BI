@@ -1,0 +1,16 @@
+Tiempo: 5 días
+Parte interesada: Profesor
+
+Herramientas
+Bodegas de datos: Elastic search
+ETL: Python
+Visualización: Kibana
+
+
+Tareas:
+1. Crear el Docker-compose para tener la base de datos de Northwind (Cargar el script)
+2. Análisis de los datos de la base de datos de Northwind
+3. Describir los datos de Northwind
+4. Investigación de elactic search y kibana (dar un entregable sobre su descripción y uso)
+5. Usar el concepto ETL con Python y polars
+6. 
