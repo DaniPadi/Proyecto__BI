@@ -139,13 +139,4 @@ Junto con Elasticsearch y Logstash, forma el conocido **ELK Stack (Elastic, Logs
 - 👁️‍🗨️ Visual e intuitivo.  
 - 🔄 Escalable y compatible con Elastic Stack.  
 
----
-
-## ✅ Entregables de esta sección
-- [x] Tablas de dimensiones y hechos completadas.  
-- [x] Descripción técnica de Elasticsearch y Kibana.  
-- [x] Integración planificada con ETL (Python + Polars).  
-- [x] Visualización planificada en Kibana.  
-
----
 
