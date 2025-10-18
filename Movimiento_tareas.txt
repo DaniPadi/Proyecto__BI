@@ -8,9 +8,26 @@ Visualización: Kibana
 
 
 Tareas:
-1. Crear el Docker-compose para tener la base de datos de Northwind (Cargar el script)
-2. Análisis de los datos de la base de datos de Northwind
-3. Describir los datos de Northwind
-4. Investigación de elactic search y kibana (dar un entregable sobre su descripción y uso)
-5. Usar el concepto ETL con Python y polars
-6. 
+* Crear el Docker-compose para tener la base de datos de Northwind (Cargar el script)
+* Análisis de los datos de la base de datos de Northwind
+* Describir los datos de Northwind (generar tabla conceptual y lógica)
+* Análisis de los KPI
+* Crear la tabla de dimensiones
+* Crear la tabla de hechos
+* Investigación de elactic search y kibana (dar un entregable sobre su descripción y uso)
+* Usar el concepto ETL con Python y polars
+* Crear visualización con Kibana
+
+Asiganciones:
+ - Docker compose con la base de datos Northwind (Carlos D. Calleja)
+    Se generara un archivo .yml donde estará montado en la carpeta --data_warehouse-- para que todos tengamos
+    acceso a la base de datos.
+
+ - Análisis de los datos (Fabián Benjumea)
+    Se genera el modelo de las tablas que tiene Northwind y como estan estructuradas
+
+- Describir la Base de datos (Walfran Martínez)
+    Generar las relaciones con los atributos de cada tabla en la base de datos Northwind
+
+- Análisis de los KPI ( Daniel Padilla )
+    Describir los datos necesarios para responder a lo necesario en los KPI.
