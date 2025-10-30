@@ -28,4 +28,5 @@ ENTRYPOINT ["/bin/bash", "/tmp/init-northwind.sh"]
 # 1. docker build -t northwind_bd .
 # 2. docker run -d --name mssql-northwind -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=YourStrong!Passw0rd" -p 1433:1433 northwind_bd
 # 3. docker logs -f mssql-northwind
-# 4. docker exec -it mssql-northwind bash
+# 4. docker exec -it mssql-northwind /opt/mssql-tools18/bin/sqlcmd -S localhost -U SA -P 'YourStrong!Passw0rd' -C -d Northwind
+# 5. SELECT * FROM Customers
