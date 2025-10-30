@@ -1,7 +1,7 @@
 Tiempo: 5 días
 Parte interesada: Profesor
 
-/Herramientas/
+/Herramientas/ 
 Bodegas de datos: Elastic search
 ETL: Python
 Visualización: Kibana
