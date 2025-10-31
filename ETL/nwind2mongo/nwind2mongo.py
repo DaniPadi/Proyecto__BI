@@ -24,31 +24,31 @@ def connect_mongo():
 # --- 3 Extracción de datos relevantes ---
 def extract_data(conn):
     queries = {
-        "orders": """
+        "Orders": """
             SELECT OrderID, CustomerID, EmployeeID, OrderDate, RequiredDate, ShippedDate, ShipCountry, ShipCity
             FROM Orders
         """,
-        "order_details": """
+        "Order_details": """
             SELECT OrderID, ProductID, UnitPrice, Quantity, Discount
             FROM [Order Details]
         """,
-        "customers": """
+        "Customers": """
             SELECT CustomerID, CompanyName, ContactName, Country, City, Region
             FROM Customers
         """,
-        "products": """
+        "Products": """
             SELECT ProductID, ProductName, CategoryID, SupplierID, UnitPrice
             FROM Products
         """,
-        "categories": """
+        "Categories": """
             SELECT CategoryID, CategoryName, Description
             FROM Categories
         """,
-        "employees": """
+        "Employees": """
             SELECT EmployeeID, FirstName, LastName, Title, Country
             FROM Employees
         """,
-        "suppliers": """
+        "Suppliers": """
             SELECT SupplierID, CompanyName AS SupplierName, Country AS SupplierCountry
             FROM Suppliers
         """
