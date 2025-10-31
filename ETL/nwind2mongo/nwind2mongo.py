@@ -84,16 +84,12 @@ def load_to_mongo(dfs, db):
         # Convertir a registros
         records = transform_records(df)
 
-        # Verificación de tipos
-        for col in df.columns:
-            tipos = list({type(v) for v in df[col]})
-            print(f"  • Columna {col}: {tipos}")
-
         # Inserción a Mongo
         if records:
             print(f"  Insertando {len(records)} registros en colección '{name}' ...")
             try:
                 collection.insert_many(records)
+                print(f"---Colección '{name}' insertado correctamente")
                 
             except Exception as e:
                 print(f"Error insertando '{name}': {e}")
@@ -116,7 +112,7 @@ def main():
     print("Cargando datos en MongoDB...")
     load_to_mongo(dfs, db)
 
-    print("Proceso ETL completado exitosamente")
+    print("\nProceso ETL completado exitosamente")
 
 if __name__ == "__main__":
     main()
