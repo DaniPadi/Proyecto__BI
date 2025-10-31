@@ -1,0 +1,16 @@
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INIT_DATABASE: "North"
+    volumes:
+      - ./mongo_data:/data/db
+    networks:
+      - etl_net
+
+networks:
+  etl_net:
+    driver: bridge
